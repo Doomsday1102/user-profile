@@ -81,5 +81,5 @@ These features enhance the user experience by providing data persistence and vis
 
 ## Contact
 
-If you have any questions or suggestions, please contact [your-email@example.com](mailto:die2002alexsander@gmail.com).
+If you have any questions or suggestions, please contact [die2002alexsander@gmail.com](mailto:die2002alexsander@gmail.com).
 
