@@ -28,6 +28,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="bg-white shadow-md">
+          <nav className="container mx-auto flex justify-between items-center p-6">
+            <h1 className="text-2xl font-bold text-gray-800">User Profile</h1>
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-800 hover:text-blue-500 transition duration-300">
+                Home
+              </a>
+              <a href="#" className="text-gray-800 hover:text-blue-500 transition duration-300">
+                About
+              </a>
+              <a href="#" className="text-gray-800 hover:text-blue-500 transition duration-300">
+                Contact
+              </a>
+            </div>
+          </nav>
+        </header>
         {children}
       </body>
     </html>

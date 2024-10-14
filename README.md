@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# User Profile Application
 
-First, run the development server:
+This is a user profile application that allows users to view and edit their profile, as well as view events and messages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Prerequisites
+
+- **Node.js** (version 14 or higher)
+- **npm** (version 6 or higher) or **yarn**
+
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Alesxander1102/user-profile
+   cd user-profile
+   ```
+
+2. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Running the Application
+
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:3000` to see the application running.
+
+## Project Structure
+
+```
+├── components
+│   ├── ui
+│   │   ├── EventForm.tsx
+│   │   ├── EventList.tsx
+│   │   ├── EventModal.tsx
+│   │   ├── MessageList.tsx
+│   │   ├── MessageModal.tsx
+│   │   ├── ProfileDetails.tsx
+│   │   ├── ProfileForm.tsx
+├── hooks
+│   ├── useEvents.ts
+│   ├── useMessages.ts
+│   ├── useProfile.ts
+├── mocks
+│   ├── dataUser.json
+│   ├── eventsData.json
+│   ├── messagesData.json
+├── pages
+│   ├── index.tsx
+│   ├── _app.tsx
+├── public
+│   ├── images
+├── styles
+│   ├── globals.css
+├── types
+│   ├── interfaces.ts
+├── util
+│   ├── validate.ts
+├── README.md
+├── package.json
+├── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Additional Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Data Persistence with `localStorage`**: 
+   - User profile modifications are saved in `localStorage` to ensure data persistence across sessions.
+   
+2. **Unread Message Highlighting**: 
+   - Unread messages are highlighted in light gray to differentiate them from viewed messages.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+These features enhance the user experience by providing data persistence and visual cues for unread messages.
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+If you have any questions or suggestions, please contact [your-email@example.com](mailto:die2002alexsander@gmail.com).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
